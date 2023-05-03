@@ -1,0 +1,21 @@
+<html>
+    <head>
+    <title>Micrometer To Yard</title>
+</head>
+
+<body style="text-align: center; background: lightgreen; color: blue;">
+
+    <p>
+        <label>Micrometer</label>
+            <input id="inputmicro" type="number" placeholder="Micrometer" oninput="lengthorDistanceConverter(this.value)" onchange="lengthorDistanceConverter(this.value)">
+    </p>
+    <p>Yard: <span id="outputyard"></span></p>
+
+    <script>
+        function lengthorDistanceConverter(valNum) {
+            valNum = parseFloat(valNum);
+            document.getElementById("outputyard").innerHTML = valNum / 914400;
+        }
+    </script>
+
+</body></html>
